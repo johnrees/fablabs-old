@@ -2,14 +2,15 @@ ruby File.read(".ruby-version").strip
 
 source 'https://rubygems.org'
 
-gem 'rails','~> 5.2'
+gem 'rails','~> 6'
 gem 'workflow', '~> 2.0'#, github: 'geekq/workflow'
 gem 'workflow-activerecord', '>=4.1', '< 6.0'
 
 # Using community gems because official support does not cover Rails 5
 # Consider refactor not to use them or find alternatives.
 # Gems hindering Rails 6 upgrade:
-gem 'rocket_pants', git: 'https://github.com/parse/rocket_pants'
+#
+#gem 'rocket_pants', git: 'https://github.com/parse/rocket_pants'
 
 gem 'protected_attributes_continued'
 

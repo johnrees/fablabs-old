@@ -12,7 +12,7 @@
           = f.input :username
           = f.input :email
           = f.input :url
-          = f.input :dob, as: :date, end_year: Date.today.year - 120, start_year: Date.today.year - 3, include_blank: true, order: [:day, :month, :year]
+          = f.input :dob, as: :date, end_year: 1900, start_year: Date.today.year - 13, include_blank: true, order: [:day, :month, :year]
           = f.input :bio
           = f.input :locale
           = f.input :country_code
